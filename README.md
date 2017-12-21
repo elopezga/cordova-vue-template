@@ -9,10 +9,11 @@
 ### Install
 - Clone: `git clone https://github.com/elopezga/cordova-vue-template.git`
         
-- Install depencencies: ``` bash
-                        cd cordova-vue-template
-                        npm install
-                        ```
+- Install depencencies: 
+``` bash
+cd cordova-vue-template
+npm install
+```
 - Add platform: `cordova platform add browser`
 - Build: `npm run-script build-dev`
 - Run: `cordova run browser`
