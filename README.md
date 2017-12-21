@@ -7,6 +7,12 @@
 - cordova: `npm install -g cordova`
 - browserify: `npm install -g browserify`
 ### Install
-- Clone: ``` bash 
-        git clone https://github.com/elopezga/cordova-vue-template.git
-        ```
+- Clone: `git clone https://github.com/elopezga/cordova-vue-template.git`
+        
+- Install depencencies: ``` bash
+                        cd cordova-vue-template
+                        npm install
+                        ```
+- Add platform: `cordova platform add browser`
+- Build: `npm run-script build-dev`
+- Run: `cordova run browser`
