@@ -1,4 +1,4 @@
-# codova-vue-template
+# cordova-vue-template
 > Quick starter template for developing cordova applications using vue's powerful single file components.
 
 ## Getting Started
