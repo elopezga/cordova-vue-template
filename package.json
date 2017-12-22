@@ -6,7 +6,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build-dev": "cross-env NODE_ENV=development browserify -e www/src/main.js -o www/build/build.js"
+        "build-dev": "cross-env NODE_ENV=development browserify -e www/src/main.js -o www/build/build.js",
+        "watchify": "cross-env NODE_ENV=development watchify -vd -p browserify-hmr -e www/src/main.js -o www/build/build.js"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
