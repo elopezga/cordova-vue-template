@@ -8,7 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build-dev": "cross-env NODE_ENV=development browserify -e www/src/main.js -o www/build/build.js",
         "watchify": "cross-env NODE_ENV=development watchify -vd -p browserify-hmr -e www/src/main.js -o www/build/build.js",
-        "serve": "http-serer www -o -c-1 -a localhost",
+        "serve": "http-server www -o -c-1 -a localhost",
         "dev-live": "npm-run-all --parallel watchify serve"
     },
     "author": "Apache Cordova Team",
