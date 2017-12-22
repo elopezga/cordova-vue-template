@@ -7,7 +7,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build-dev": "cross-env NODE_ENV=development browserify -e www/src/main.js -o www/build/build.js",
-        "watchify": "cross-env NODE_ENV=development watchify -vd -p browserify-hmr -e www/src/main.js -o www/build/build.js"
+        "watchify": "cross-env NODE_ENV=development watchify -vd -p browserify-hmr -e www/src/main.js -o www/build/build.js",
+        "serve": "http-serer www -o -c-1 -a localhost",
+        "dev-live": "npm-run-all --parallel watchify serve"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
@@ -21,6 +23,8 @@
         "browserify": "^14.5.0",
         "browserify-hmr": "^0.3.6",
         "cross-env": "^5.1.2",
+        "http-server": "^0.10.0",
+        "npm-run-all": "^4.1.2",
         "vueify": "^9.4.1",
         "watchify": "^3.9.0"
     },
